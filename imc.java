@@ -1,4 +1,4 @@
-import javax.swing.*;
+import javax.swing.JOptionPane;
 
 public class imc {
     // essa função recebe um id para imprimir a mensagem sobre o imc do usuário
@@ -30,9 +30,9 @@ public class imc {
     public static int Mensagens() {
         String peso;
         String altura;
-        float pesoint;
-        float alturaint;
-        Float imc;
+        double pesoint;
+        double alturaint;
+        double imc;
 
         peso = JOptionPane.showInputDialog("Digite o seu peso em quilogramas.");
         pesoint = Integer.parseInt(peso);
