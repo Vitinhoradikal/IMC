@@ -3,22 +3,31 @@ import javax.swing.JOptionPane;
 public class imc {
     // essa função recebe um id para imprimir a mensagem sobre o imc do usuário
     public static void Informacoes(int id) {
-        if (id == 1) {
-            JOptionPane.showMessageDialog(null, "Você está muito abaixo do peso!");
-        } else if (id == 2) {
-            JOptionPane.showMessageDialog(null, "Você está abaixo do peso!");
-        } else if (id == 3) {
-            JOptionPane.showMessageDialog(null, "Parabéns. Seu peso está Normal");
-        } else if (id == 4) {
-            JOptionPane.showMessageDialog(null, "Você está acima do peso");
-        } else if (id == 5) {
-            JOptionPane.showMessageDialog(null, "Você está em obesidade Grau 1");
-        } else if (id == 6) {
-            JOptionPane.showMessageDialog(null, "Você está em obesidade Grau 2 (severa)");
-        } else if (id == 7) {
-            JOptionPane.showMessageDialog(null, "Você está em obesidade Grau 3 (mórbida)");
-        } else {
-            JOptionPane.showMessageDialog(null, "Erro no cálculo do IMC.");
+        switch (id) {
+            case 1:
+                JOptionPane.showMessageDialog(null, "Você está muito abaixo do peso!");
+                break;
+            case 2:
+                JOptionPane.showMessageDialog(null, "Você está abaixo do peso!");
+                break;
+            case 3:
+                JOptionPane.showMessageDialog(null, "Parabéns. Seu peso está Normal");
+                break;
+            case 4:
+                JOptionPane.showMessageDialog(null, "Você está acima do peso");
+                break;
+            case 5:
+                JOptionPane.showMessageDialog(null, "Você está em obesidade Grau 1");
+                break;
+            case 6:
+                JOptionPane.showMessageDialog(null, "Você está em obesidade Grau 2 (severa)");
+                break;
+            case 7:
+                JOptionPane.showMessageDialog(null, "Você está em obesidade Grau 3 (mórbida)");
+                break;
+            case 0:
+                JOptionPane.showMessageDialog(null, "Erro no cálculo do IMC.");
+                break;
         }
 
     }
