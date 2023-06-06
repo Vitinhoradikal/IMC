@@ -1,7 +1,7 @@
 import javax.swing.*;
 
 public class imc {
-    // essa função recebe um id para imprimir as mensagens ao usuário
+    // essa função recebe um id para imprimir a mensagem sobre o imc do usuário
     public static void Informacoes(int id) {
         if (id == 1) {
             JOptionPane.showMessageDialog(null, "Você está muito abaixo do peso!");
@@ -15,8 +15,10 @@ public class imc {
             JOptionPane.showMessageDialog(null, "Você está em obesidade Grau 1");
         } else if (id == 6) {
             JOptionPane.showMessageDialog(null, "Você está em obesidade Grau 2 (severa)");
-        } else if (id == 0) {
+        } else if (id == 7) {
             JOptionPane.showMessageDialog(null, "Você está em obesidade Grau 3 (mórbida)");
+        } else {
+            JOptionPane.showMessageDialog(null, "Erro no cálculo do IMC.");
         }
 
     }
@@ -45,12 +47,14 @@ public class imc {
             return 2;
         } else if (imc <= 24.99) {
             return 3;
-        } else if (imc <= 34.99) {
+        } else if (imc <= 29.99) {
             return 4;
-        } else if (imc <= 39.99) {
+        } else if (imc <= 34.99) {
             return 5;
-        } else if (imc >= 40) {
+        } else if (imc <= 39.99) {
             return 6;
+        } else if (imc >= 40) {
+            return 7;
         } else {
             return 0;
         }
