@@ -8,15 +8,15 @@ public class imc {
         } else if (id == 2) {
             JOptionPane.showMessageDialog(null, "Você está abaixo do peso!");
         } else if (id == 3) {
-            JOptionPane.showMessageDialog(null, "Peso Normal");
+            JOptionPane.showMessageDialog(null, "Parabéns. Seu peso está Normal");
         } else if (id == 4) {
-            JOptionPane.showMessageDialog(null, "Mensagem 4");
+            JOptionPane.showMessageDialog(null, "Você está acima do peso");
         } else if (id == 5) {
-            JOptionPane.showMessageDialog(null, "Mensagem 5");
+            JOptionPane.showMessageDialog(null, "Você está em obesidade Grau 1");
         } else if (id == 6) {
-            JOptionPane.showMessageDialog(null, "Mensagem 6");
+            JOptionPane.showMessageDialog(null, "Você está em obesidade Grau 2 (severa)");
         } else if (id == 0) {
-            JOptionPane.showMessageDialog(null, "Erro");
+            JOptionPane.showMessageDialog(null, "Você está em obesidade Grau 3 (mórbida)");
         }
 
     }
@@ -37,6 +37,7 @@ public class imc {
         altura = JOptionPane.showInputDialog("Digite a sua altura em centímetos.");
         alturaint = Integer.parseInt(altura);
         imc = (pesoint / (alturaint * alturaint) * 10000);
+        JOptionPane.showMessageDialog(null, "Seu IMC é: " + imc);
 
         if (imc <= 17) {
             return 1;
